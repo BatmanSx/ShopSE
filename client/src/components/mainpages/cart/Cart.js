@@ -52,7 +52,7 @@ const addToCart = async (cart) =>{
     }
 
     const removeProduct = id =>{
-        if(window.confirm("Do you want to delete this product?")){
+        if(window.confirm("Czy chcesz usunąć ten produkt z koszyka?")){
             cart.forEach((item, index) => {
                 if(item._id === id){
                     cart.splice(index, 1)
@@ -73,7 +73,7 @@ const addToCart = async (cart) =>{
 
         setCart([])
         addToCart([])
-        alert("You have successfully placed an order.")
+        alert("Płatność przebiegła pomyślnie.")
     }
 
 
