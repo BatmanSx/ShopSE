@@ -110,7 +110,7 @@ const addToCart = async (cart) =>{
             }
 
             <div className="total">
-                <h3>Total: $ {total}</h3>
+                <h3>Total: PLN {total}</h3>
                 <PaypalButton
                 total={total}
                 tranSuccess={tranSuccess} />
