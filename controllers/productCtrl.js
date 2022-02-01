@@ -14,7 +14,7 @@ class APIfeatures {
        excludedFields.forEach(el => delete(queryObj[el]))
        
        let queryStr = JSON.stringify(queryObj)
-       queryStr = queryStr.replace(/\b(gte|gt|lt|lte|regex)\b/g, match => 'PLN' + match)
+       queryStr = queryStr.replace(/\b(gte|gt|lt|lte|regex)\b/g, match => '$' + match)
 
     //    gte = greater than or equal
     //    lte = lesser than or equal
